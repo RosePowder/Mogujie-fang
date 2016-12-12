@@ -1,0 +1,1783 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<title>蘑菇街~~就是买买买!</title>
+		<meta name="keywords" content="蘑菇街,蘑菇街首页,蘑菇街官网,女装,淘宝网蘑菇街,网购,买手,时尚,mogujie,购物">
+		<meta name="description" content="蘑菇街，我的买手街！蘑菇街是最大的女性电商社交平台，一亿多爱美的妹纸在这里找到自己喜爱的商品，数千时尚买手达人在这里交流购物心得，分享自己的消费体验。">
+		<!--设置IE 强制用最高版本渲染-->
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<!-- 设置360 搜狗  让双核浏览器强制用webkit内核渲染 -->
+		<meta name="renderer" content="webkit">
+		<!-- 避免百度代码嵌套-->
+		<meta http-equiv="Cache-Control" content="no-siteapp" />
+		<link rel="stylesheet" type="text/css" href="css/Mogujie.css"/>
+		<link rel="stylesheet" type="text/css" href="css/iconfont.css"/>
+		<link rel="stylesheet" type="text/css" href="css/iconfont1.css"/>
+	</head>
+	<body class="media_screen_1200">
+	<!-----------------右侧导航----------------->
+	<div class="right-nav" style="right: 0px;">     
+		<!--1.空的右侧边栏-->
+		<div class="right-nav_blank">
+			<!--用户头像-->
+			<div  class="side-bar right-nav_headP">
+				<img src="img/index/headP.jpg" style="width: 30px;height: 30px;"/>
+			</div>
+			<!--购物车-->
+			<div id="shoppingCar" class="side-bar right-nav_shoppingC">
+				<a href="">
+					<i class="iconfont icon-gouwuche"></i>
+					<div class="r-txt">购物车</div>
+					<!--<div class="num"></div>-->
+				</a>
+			</div> 
+			<!--优惠券-->
+			<div id="coupon" class="side-bar right-nav_coupon">
+				<a href="">
+					<i class="iconfont icon-youhuiquan"></i>
+					<div class="r-txt">优惠券</div>
+					<!--<div class="num"></div>-->
+				</a>
+			</div>
+			<!--钱包-->
+			<div id="wallt" class="side-bar right-nav_wallet">
+				<a href="">
+					<i class="iconfont icon-qianbao1"></i>
+					<div class="r-txt">钱包</div>
+				</a>
+			</div>
+			<!--足迹-->
+			<div id="footmark" class="side-bar right-nav_footmark">
+				<a href="">
+					<i class="iconfont icon-wodezuji"></i>
+					<div class="r-txt">足迹</div>
+				</a>
+			</div>
+			<!--回到顶部-->
+			<div id="backT" class="side-bottom right-nav_backT">
+				<!--<a href="">-->
+					<i class="iconfont icon-qianbao r-txt"></i>
+					<div class="r-txt">Top</div>
+				<!--</a>-->
+			</div>	
+		</div>	
+	</div>	
+	<!--某一位置出现固定搜索半透明框-->
+	<div class="clarity-search" style="display: none;">
+		<div class="clarity-search-wrap">
+		<!--2-->
+			<form action="/search/" method="get" class="clearfix" id="top_nav_form">				<!--不懂双斜线-->
+				<input class="ts_txt fl" type="text" value="初秋元气套装" autocomplete="off"/>		<!--不懂autocomplete-->
+				<input value="" class="ts_btn fr" type="submit">
+				<a href=""><i class="iconfont icon-sousuo2 fl"></i></a>
+				<input name="t" value="bao" id="select_type" type="hidden">
+			</form>
+		<!--2-->
+		<!--3-->
+			<div class="top_search_hint" ></div>
+		<!--3-->
+		</div>
+	</div>
+		<!-----------------header----------------->
+	<div class="header">
+		<div class="header-wrap clearfix">
+			<a rel="nofollow" class="home fl" href="http://www.mogujie.com/" target="_blank">蘑菇街首页</a>
+			<ul class="header-top fr">
+				<li class="s1 fl">
+					<div class="s1-wrap login-register right-line">
+						<a class="header-top-title" href="">注册</a>
+					</div>
+				</li>
+				<li class="s1 fl">
+					<div class="s1-wrap login-register right-line">
+						<a class="header-top-title" href="load.html" target="_blank">登录</a>
+					</div>
+				</li>
+				<li class="s1 fl">
+					<div class="s1-wrap right-line">
+						<b class="iconfont icon-caidan"></b>
+						<a class="header-top-title" href="">我的订单</a>
+					</div>
+					
+				</li>
+				<li class="s1 fl" >
+					<div class="s1-wrap in-case right-line">
+						<b class="iconfont icon-gouwuche1"></b>
+						<a class="header-top-title" href="">购物车</a>
+						<ol class="header-in-case">
+							<li class="s2"><a href="">购物车是空的啦</a></li>
+						</ol>
+					</div>
+				</li>
+				<li class="s1 fl" >
+					<div class="s1-wrap in-case right-line"  id="">
+						<a class="header-top-title" href="">客户服务</a>
+						<b class="iconfont icon-arrow-right-copy"></b>
+						<ol class="header-in-case" >
+							<li class="s2"><a href="">消费者服务</a></li>
+							<li class="s2"><a href="">商家服务</a></li>
+							<li class="s2"><a href="">规则中心</a></li>
+						</ol>
+					</div>
+				</li>
+				<li class="s1 fl" >
+					<div class="s1-wrap in-case right-line">
+						<b class="iconfont icon-dianpu"></b>
+						<a class="header-top-title" href="">我的小店</a>
+						<b class="iconfont icon-arrow-right-copy"></b>
+						<ol class="header-in-case">
+							<li class="s2"><a href="">管理后台</a></li>
+							<li class="s2"><a href="">商家社区</a></li>
+							<li class="s2"><a href="">商家培训</a></li>
+							<li class="s2"><a href="">市场入驻</a></li>
+						</ol>
+					</div>
+				</li>
+			</ul>
+		</div>	
+	</div>
+	<!-----------------header-mid----------------->
+	<div class="header-mid">
+		<div class="header-mid_wrap clearfix">
+			<a rel="nofollow"  class="logo fl" title="蘑菇街首页" target="_blank">
+				<img src="img/index/logo-mgj.png" style="width: 189px;"/>
+			</a>	
+			<div class=" fl normal-search-content">
+				<div class="top-nav_search">
+					<!--搜索框 -->
+					<div class="search_inner_box clearfix">
+							<!--1-->
+						<div class="selectbox fl">
+							<span class="selected">搜商品&gt;</span>
+							<ol>
+								<li class="current" data-index="bao">
+									<a href="">商品</a>
+								</li>
+								<li data-index="shop">
+									<a href="">店铺</a>
+								</li>
+							</ol>
+						</div>
+					<!--1-->
+					<!--2-->
+						<form action="/search/" method="get" class="clearfix" id="top_nav_form">				<!--不懂双斜线-->
+							<input class="ts_txt fl" type="text" value="初秋元气套装" autocomplete="off"/><!--不懂autocomplete-->
+							<input value="" class="ts_btn fr" type="submit">
+							<a href=""><i class="iconfont icon-sousuo2 fl"></i></a>
+							<input name="t" value="bao" id="select_type" type="hidden">
+						</form>
+					<!--2-->
+					<!--3-->
+						<div class="top_search_hint" ></div>
+					<!--3-->
+					</div>
+				</div>
+				<!--搜索框 -->
+				<div class="search-hot_words">
+					<a class="search-hot_word" href=""  >韩版连衣裙</a>
+					<a class="search-hot_word" href=""  >小白鞋</a>
+					<a class="search-hot_word" href=""  >潮T</a>
+					<a class="search-hot_word" href=""  >运动套装</a>
+					<a class="search-hot_word" href=""  >男T恤</a>
+					<a class="search-hot_word" href=""  >夏季小包</a>
+					<a class="search-hot_word" href=""  >短裤</a>
+					<a class="search-hot_word" href=""  >凉鞋</a>
+					<a class="search-hot_word" href=""  >套装</a>
+				</div>
+			</div>
+			
+			<div class="mid-fr fr">
+				<div class="qcode">
+					<img src="img/index/qcode.png"style="width: 83px;height: 83px;"/>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!----------------body-content----------------->
+	<div id="body_wrap">
+	<!-------header-top-nav----->
+		<div class="header-nav-wrap clearfix">
+			<div class="header-top-nav">
+				<div class="header-top-nav-wrap clearfix">
+					<ul class="header-top-nav-list fl">
+						<li class="nav-home fl">全部商品</li>
+						<li class="fl"><a href="">团购</a></li>
+						<li class="fl"><a href="">快抢</a></li>
+					</ul>
+				</div>
+			</div>
+		</div>	
+	<!---left-nav & banner------>
+		<div class="header-left-nav">
+			<div class="header-left-wrap clearfix">
+				<!---left-nav----->
+				<div class="left-nav fl">
+					<div class="primary-nav">
+						<ul class="primary_nav_list clearfix">
+							<li class="fl primary_nav_li primary_nav_li_first">
+								<dl class="nav_wrap clearfix">
+									<dt class="fl"><a href="">上衣</a></dt>
+									<dd class="fr">
+										<span id="">
+											<a class="hot_words" href="">秋上新</a>
+											<a class="hot_words_mid" href="">衬衫</a>
+											<a class="" href="">针织衫</a>
+										</span>
+									</dd>
+								</dl>
+								<!-- 弹出框 -->
+								<!--<i class="nav_arrow"></i>
+								<i class="nav_line_bottom"></i>
+								<i class="nav_line_right"></i>-->
+								<div class="left-nav_more">
+									<dl class="nav_more_wrap">
+										<dt><a href="">初秋上新</a></dt>
+										<dd>
+											<a href="">时尚套装</a>
+											<a href="">牛仔外套</a>
+											<a href="">卫衣</a>
+											<a href="">棒球外套</a>
+											<a href="">风衣</a>
+											<a href="">皮衣</a>
+											<a href="">薄外套</a>
+											<a href="">开衫</a>
+										</dd>	
+									</dl>	
+									<dl class="nav_more_wrap">
+										<dt><a href="">换季热卖</a></dt>
+										<dd>
+											<a href="">T恤</a>
+											<a href="">雪纺衫</a>
+											<a href="">蕾丝衫</a>
+											<a href="">衬衫</a>
+											<a href="">背心吊带</a>
+											<a href="">娃娃衫</a>
+											<a href="">针织薄衫</a>
+											<a href="">情侣装</a>
+										</dd>
+									</dl>
+									<dl class="nav_more_wrap">
+										<dt><a href="">潮流新品</a></dt>
+										<dd>
+											<a href="">短款上衣</a>
+											<a href="">雪纺衫</a>
+											<a href="">蕾丝衫</a>
+											<a href="">衬衫</a>
+											<a href="">背心吊带</a>
+											<a href="">娃娃衫</a>
+											<a href="">针织薄衫</a>
+											<a href="">情侣装</a>
+										</dd>
+									</dl>
+									<!--yizhangtu-->
+									<div class="nav_more_img">
+										<a href=""><img src="img/index/upload_5hc530idccjil70544ecl6gel1kg0_250x130.jpg"/></a>
+									</div>
+								</div>
+							</li>
+							<li class="fl primary_nav_li">
+								<dl class="nav_wrap clearfix">
+									<dt class="fl"><a href="">裙子</a></dt>
+									<dd class="fr">
+										<span id="">
+											<a class="hot_words" href="">连衣裙</a>
+											<a class="hot_words_mid" href="">半身裙</a>
+											<a class="" href="">雪纺裙</a>
+										</span>
+									</dd>
+								</dl>
+								<!-- 弹出框 -->
+								<!--<i class="nav_arrow"></i>
+								<i class="nav_line_bottom"></i>
+								<i class="nav_line_right"></i>-->
+								<div class="left-nav_more">
+									<dl class="nav_more_wrap">
+										<dt><a href="">当季热销</a></dt>
+										<dd>
+											<a href="">韩范美裙</a>
+											<a href="">裙子套装</a>
+											<a href="">T恤裙</a>
+											<a href="">百褶裙</a>
+											<a href="">衬衫裙</a>
+											<a href="">包臀裙</a>
+											<a href="">背带裙</a>
+											<a href="">长裙</a>
+											<a href="">牛仔裙</a>
+											<a href="">背心裙</a>
+											<a href="">牛仔半身裙</a>
+										</dd>	
+									</dl>	
+									<dl class="nav_more_wrap">
+										<dt><a href="">潮流新品</a></dt>
+										<dd>
+											<a href="">小黑裙</a>
+											<a href="">吊带裙</a>
+											<a href="">荷叶边美裙</a>
+											<a href="">小白裙</a>
+											<a href="">碎花裙</a>
+											<a href="">不规则美裙</a>
+											<a href="">一字领美裙</a>
+											<a href="">开叉裙</a>
+											<a href="">蕾丝裙</a>
+										</dd>
+									</dl>
+									<dl class="nav_more_wrap">
+										<dt><a href="">初秋上新</a></dt>
+										<dd>
+											<a href="">中袖连衣裙</a>
+											<a href="">针织裙</a>
+											<a href="">长袖连衣裙</a>
+											<a href="">复古连衣裙</a>
+											<a href="">卫衣裙</a>
+										</dd>
+									</dl>
+									<!--yizhangtu-->
+									<div class="nav_more_img">
+										<a href=""><img src="img/index/upload_ie4deyrvguytkytchezdambqgiyde_250x130.jpg"/></a>
+									</div>
+								</div>
+							</li>
+							<li class="fl primary_nav_li">
+								<dl class="nav_wrap clearfix">
+									<dt class="fl"><a href="">裤子</a></dt>
+									<dd class="fr">
+										<span id="">
+											<a class="hot_words" href="">牛仔裤</a>
+											<a class="hot_words_mid" href="">打底裤</a>
+											<a class="" href="">阔腿裤</a>
+										</span>
+									</dd>
+								</dl>
+								<!-- 弹出框 -->
+								<!--<i class="nav_arrow"></i>
+								<i class="nav_line_bottom"></i>
+								<i class="nav_line_right"></i>-->
+								<div class="left-nav_more">
+									<dl class="nav_more_wrap">
+										<dt><a href="">当季热销</a></dt>
+										<dd>
+											<a href="">韩范美裙</a>
+											<a href="">裙子套装</a>
+											<a href="">T恤裙</a>
+											<a href="">百褶裙</a>
+											<a href="">衬衫裙</a>
+											<a href="">包臀裙</a>
+											<a href="">背带裙</a>
+											<a href="">长裙</a>
+											<a href="">牛仔裙</a>
+											<a href="">背心裙</a>
+											<a href="">牛仔半身裙</a>
+										</dd>	
+									</dl>	
+									<dl class="nav_more_wrap">
+										<dt><a href="">潮流新品</a></dt>
+										<dd>
+											<a href="">小黑裙</a>
+											<a href="">吊带裙</a>
+											<a href="">荷叶边美裙</a>
+											<a href="">小白裙</a>
+											<a href="">碎花裙</a>
+											<a href="">不规则美裙</a>
+											<a href="">一字领美裙</a>
+											<a href="">开叉裙</a>
+											<a href="">蕾丝裙</a>
+										</dd>
+									</dl>
+									<dl class="nav_more_wrap">
+										<dt><a href="">初秋上新</a></dt>
+										<dd>
+											<a href="">中袖连衣裙</a>
+											<a href="">针织裙</a>
+											<a href="">长袖连衣裙</a>
+											<a href="">复古连衣裙</a>
+											<a href="">卫衣裙</a>
+										</dd>
+									</dl>
+									<!--yizhangtu-->
+									<div class="nav_more_img">
+										<a href=""><img src="img/index/upload_ifrdmyzvgbqwgzdfhezdambqmeyde_250x130.jpg"/></a>
+									</div>
+								</div>
+							</li>
+							<li class="fl primary_nav_li">
+								<dl class="nav_wrap clearfix">
+									<dt class="fl"><a href="">内衣</a></dt>
+									<dd class="fr">
+										<span id="">
+											<a class="hot_words" href="">热销榜</a>
+											<a class="hot_words_mid" href="">睡衣套装</a>
+											<a class="" href="">内内</a>
+										</span>
+									</dd>
+								</dl>
+								<!-- 弹出框 -->
+								<!--<i class="nav_arrow"></i>
+								<i class="nav_line_bottom"></i>
+								<i class="nav_line_right"></i>-->
+								<div class="left-nav_more">
+									<dl class="nav_more_wrap">
+										<dt><a href="">当季热销</a></dt>
+										<dd>
+											<a href="">韩范美裙</a>
+											<a href="">裙子套装</a>
+											<a href="">T恤裙</a>
+											<a href="">百褶裙</a>
+											<a href="">衬衫裙</a>
+											<a href="">包臀裙</a>
+											<a href="">背带裙</a>
+											<a href="">长裙</a>
+											<a href="">牛仔裙</a>
+											<a href="">背心裙</a>
+											<a href="">牛仔半身裙</a>
+										</dd>	
+									</dl>	
+									<dl class="nav_more_wrap">
+										<dt><a href="">潮流新品</a></dt>
+										<dd>
+											<a href="">小黑裙</a>
+											<a href="">吊带裙</a>
+											<a href="">荷叶边美裙</a>
+											<a href="">小白裙</a>
+											<a href="">碎花裙</a>
+											<a href="">不规则美裙</a>
+											<a href="">一字领美裙</a>
+											<a href="">开叉裙</a>
+											<a href="">蕾丝裙</a>
+										</dd>
+									</dl>
+									<dl class="nav_more_wrap">
+										<dt><a href="">初秋上新</a></dt>
+										<dd>
+											<a href="">中袖连衣裙</a>
+											<a href="">针织裙</a>
+											<a href="">长袖连衣裙</a>
+											<a href="">复古连衣裙</a>
+											<a href="">卫衣裙</a>
+										</dd>
+									</dl>
+									<!--yizhangtu-->
+									<div class="nav_more_img">
+										<a href=""><img src="img/index/upload_ie4wkmrsmm4tcmbxg4zdambqgqyde_250x130.png"/></a>
+									</div>
+								</div>
+							</li>
+							<li class="fl primary_nav_li">
+								<dl class="nav_wrap clearfix">
+									<dt class="fl"><a href="">鞋子</a></dt>
+									<dd class="fr">
+										<span id="">
+											<a class="hot_words" href="">运动鞋</a>
+											<a class="hot_words_mid" href="">单鞋</a>
+											<a class="" href="">秋上新</a>
+										</span>
+									</dd>
+								</dl>
+								<!-- 弹出框 -->
+								<!--<i class="nav_arrow"></i>
+								<i class="nav_line_bottom"></i>
+								<i class="nav_line_right"></i>-->
+								<div class="left-nav_more">
+									<dl class="nav_more_wrap">
+										<dt><a href="">当季热销</a></dt>
+										<dd>
+											<a href="">韩范美裙</a>
+											<a href="">裙子套装</a>
+											<a href="">T恤裙</a>
+											<a href="">百褶裙</a>
+											<a href="">衬衫裙</a>
+											<a href="">包臀裙</a>
+											<a href="">背带裙</a>
+											<a href="">长裙</a>
+											<a href="">牛仔裙</a>
+											<a href="">背心裙</a>
+											<a href="">牛仔半身裙</a>
+										</dd>	
+									</dl>	
+									<dl class="nav_more_wrap">
+										<dt><a href="">潮流新品</a></dt>
+										<dd>
+											<a href="">小黑裙</a>
+											<a href="">吊带裙</a>
+											<a href="">荷叶边美裙</a>
+											<a href="">小白裙</a>
+											<a href="">碎花裙</a>
+											<a href="">不规则美裙</a>
+											<a href="">一字领美裙</a>
+											<a href="">开叉裙</a>
+											<a href="">蕾丝裙</a>
+										</dd>
+									</dl>
+									<dl class="nav_more_wrap">
+										<dt><a href="">初秋上新</a></dt>
+										<dd>
+											<a href="">中袖连衣裙</a>
+											<a href="">针织裙</a>
+											<a href="">长袖连衣裙</a>
+											<a href="">复古连衣裙</a>
+											<a href="">卫衣裙</a>
+										</dd>
+									</dl>
+									<!--yizhangtu-->
+									<div class="nav_more_img">
+										<a href=""><img src="img/index/upload_4ifi9g25cj6131kf4jgk3k5k7dh92_250x130.jpg"/></a>
+									</div>
+								</div>
+							</li>
+							<li class="fl primary_nav_li">
+								<dl class="nav_wrap clearfix">
+									<dt class="fl"><a href="">男友</a></dt>
+									<dd class="fr">
+										<span id="">
+											<a class="hot_words" href="">九分裤</a>
+											<a class="hot_words_mid" href="">早秋新品</a>
+											<a class="" href="">T恤</a>
+										</span>
+									</dd>
+								</dl>
+								<!-- 弹出框 -->
+								<!--<i class="nav_arrow"></i>
+								<i class="nav_line_bottom"></i>
+								<i class="nav_line_right"></i>-->
+								<div class="left-nav_more">
+									<dl class="nav_more_wrap">
+										<dt><a href="">当季热销</a></dt>
+										<dd>
+											<a href="">韩范美裙</a>
+											<a href="">裙子套装</a>
+											<a href="">T恤裙</a>
+											<a href="">百褶裙</a>
+											<a href="">衬衫裙</a>
+											<a href="">包臀裙</a>
+											<a href="">背带裙</a>
+											<a href="">长裙</a>
+											<a href="">牛仔裙</a>
+											<a href="">背心裙</a>
+											<a href="">牛仔半身裙</a>
+										</dd>	
+									</dl>	
+									<dl class="nav_more_wrap">
+										<dt><a href="">潮流新品</a></dt>
+										<dd>
+											<a href="">小黑裙</a>
+											<a href="">吊带裙</a>
+											<a href="">荷叶边美裙</a>
+											<a href="">小白裙</a>
+											<a href="">碎花裙</a>
+											<a href="">不规则美裙</a>
+											<a href="">一字领美裙</a>
+											<a href="">开叉裙</a>
+											<a href="">蕾丝裙</a>
+										</dd>
+									</dl>
+									<dl class="nav_more_wrap">
+										<dt><a href="">初秋上新</a></dt>
+										<dd>
+											<a href="">中袖连衣裙</a>
+											<a href="">针织裙</a>
+											<a href="">长袖连衣裙</a>
+											<a href="">复古连衣裙</a>
+											<a href="">卫衣裙</a>
+										</dd>
+									</dl>
+									<!--yizhangtu-->
+									<div class="nav_more_img">
+										<a href=""><img src="img/index/upload_ie4dcmrvmrswcmzthazdambqgiyde_250x130.jpg"/></a>
+									</div>
+								</div>
+							</li>
+							<li class="fl primary_nav_li">
+								<dl class="nav_wrap clearfix">
+									<dt class="fl"><a href="">包包</a></dt>
+									<dd class="fr">
+										<span id="">
+											<a class="hot_words" href="">秋上新</a>
+											<a class="hot_words_mid" href="">女包</a>
+											<a class="" href="">男包</a>
+										</span>
+									</dd>
+								</dl>
+								<!-- 弹出框 -->
+								<!--<i class="nav_arrow"></i>
+								<i class="nav_line_bottom"></i>
+								<i class="nav_line_right"></i>-->
+								<div class="left-nav_more">
+									<dl class="nav_more_wrap">
+										<dt><a href="">当季热销</a></dt>
+										<dd>
+											<a href="">韩范美裙</a>
+											<a href="">裙子套装</a>
+											<a href="">T恤裙</a>
+											<a href="">百褶裙</a>
+											<a href="">衬衫裙</a>
+											<a href="">包臀裙</a>
+											<a href="">背带裙</a>
+											<a href="">长裙</a>
+											<a href="">牛仔裙</a>
+											<a href="">背心裙</a>
+											<a href="">牛仔半身裙</a>
+										</dd>	
+									</dl>	
+									<dl class="nav_more_wrap">
+										<dt><a href="">潮流新品</a></dt>
+										<dd>
+											<a href="">小黑裙</a>
+											<a href="">吊带裙</a>
+											<a href="">荷叶边美裙</a>
+											<a href="">小白裙</a>
+											<a href="">碎花裙</a>
+											<a href="">不规则美裙</a>
+											<a href="">一字领美裙</a>
+											<a href="">开叉裙</a>
+											<a href="">蕾丝裙</a>
+										</dd>
+									</dl>
+									<dl class="nav_more_wrap">
+										<dt><a href="">初秋上新</a></dt>
+										<dd>
+											<a href="">中袖连衣裙</a>
+											<a href="">针织裙</a>
+											<a href="">长袖连衣裙</a>
+											<a href="">复古连衣裙</a>
+											<a href="">卫衣裙</a>
+										</dd>
+									</dl>
+									<!--yizhangtu-->
+									<div class="nav_more_img">
+										<a href=""><img src="img/index/upload_ifrtinjugvrtombzhezdambqhayde_250x130.jpg"/></a>
+									</div>
+								</div>
+							</li>
+							<li class="fl primary_nav_li">
+								<dl class="nav_wrap clearfix">
+									<dt class="fl"><a href="">运动</a></dt>
+									<dd class="fr">
+										<span id="">
+											<a class="hot_words" href="">运动套装</a>
+											<a class="hot_words_mid" href="">运动鞋</a>
+											<a class="" href="">卫衣</a>
+										</span>
+									</dd>
+								</dl>
+								<!-- 弹出框 -->
+								<!--<i class="nav_arrow"></i>
+								<i class="nav_line_bottom"></i>
+								<i class="nav_line_right"></i>-->
+								<div class="left-nav_more">
+									<dl class="nav_more_wrap">
+										<dt><a href="">当季热销</a></dt>
+										<dd>
+											<a href="">韩范美裙</a>
+											<a href="">裙子套装</a>
+											<a href="">T恤裙</a>
+											<a href="">百褶裙</a>
+											<a href="">衬衫裙</a>
+											<a href="">包臀裙</a>
+											<a href="">背带裙</a>
+											<a href="">长裙</a>
+											<a href="">牛仔裙</a>
+											<a href="">背心裙</a>
+											<a href="">牛仔半身裙</a>
+										</dd>	
+									</dl>	
+									<dl class="nav_more_wrap">
+										<dt><a href="">潮流新品</a></dt>
+										<dd>
+											<a href="">小黑裙</a>
+											<a href="">吊带裙</a>
+											<a href="">荷叶边美裙</a>
+											<a href="">小白裙</a>
+											<a href="">碎花裙</a>
+											<a href="">不规则美裙</a>
+											<a href="">一字领美裙</a>
+											<a href="">开叉裙</a>
+											<a href="">蕾丝裙</a>
+										</dd>
+									</dl>
+									<dl class="nav_more_wrap">
+										<dt><a href="">初秋上新</a></dt>
+										<dd>
+											<a href="">中袖连衣裙</a>
+											<a href="">针织裙</a>
+											<a href="">长袖连衣裙</a>
+											<a href="">复古连衣裙</a>
+											<a href="">卫衣裙</a>
+										</dd>
+									</dl>
+									<!--yizhangtu-->
+									<div class="nav_more_img">
+										<a href=""><img src="img/index/upload_34k4e3530l0i5i30gj2l7b85a1ble_250x130.jpg"/></a>
+									</div>
+								</div>
+							</li>
+							<li class="fl primary_nav_li">
+								<dl class="nav_wrap clearfix">
+									<dt class="fl"><a href="">美妆</a></dt>
+									<dd class="fr">
+										<span id="">
+											<a class="hot_words" href="">补水保湿</a>
+											<a class="hot_words_mid" href="">面膜</a>
+											<a class="" href="">BB霜</a>
+										</span>
+									</dd>
+								</dl>
+								<!-- 弹出框 -->
+								<!--<i class="nav_arrow"></i>
+								<i class="nav_line_bottom"></i>
+								<i class="nav_line_right"></i>-->
+								<div class="left-nav_more">
+									<dl class="nav_more_wrap">
+										<dt><a href="">当季热销</a></dt>
+										<dd>
+											<a href="">韩范美裙</a>
+											<a href="">裙子套装</a>
+											<a href="">T恤裙</a>
+											<a href="">百褶裙</a>
+											<a href="">衬衫裙</a>
+											<a href="">包臀裙</a>
+											<a href="">背带裙</a>
+											<a href="">长裙</a>
+											<a href="">牛仔裙</a>
+											<a href="">背心裙</a>
+											<a href="">牛仔半身裙</a>
+										</dd>	
+									</dl>	
+									<dl class="nav_more_wrap">
+										<dt><a href="">潮流新品</a></dt>
+										<dd>
+											<a href="">小黑裙</a>
+											<a href="">吊带裙</a>
+											<a href="">荷叶边美裙</a>
+											<a href="">小白裙</a>
+											<a href="">碎花裙</a>
+											<a href="">不规则美裙</a>
+											<a href="">一字领美裙</a>
+											<a href="">开叉裙</a>
+											<a href="">蕾丝裙</a>
+										</dd>
+									</dl>
+									<dl class="nav_more_wrap">
+										<dt><a href="">初秋上新</a></dt>
+										<dd>
+											<a href="">中袖连衣裙</a>
+											<a href="">针织裙</a>
+											<a href="">长袖连衣裙</a>
+											<a href="">复古连衣裙</a>
+											<a href="">卫衣裙</a>
+										</dd>
+									</dl>
+									<!--yizhangtu-->
+									<div class="nav_more_img">
+										<a href=""><img src="img/index/upload_ie4toyjqgzswiojthezdambqgqyde_250x130.jpg"/></a>
+									</div>
+								</div>
+							</li>
+							<li class="fl primary_nav_li">
+								<dl class="nav_wrap clearfix">
+									<dt class="fl"><a href="">配饰</a></dt>
+									<dd class="fr">
+										<span id="">
+											<a class="hot_words" href="">围巾</a>
+											<a class="hot_words_mid" href="">项链</a>
+											<a class="" href="">男士配饰</a>
+										</span>
+									</dd>
+								</dl>
+								<!-- 弹出框 -->
+								<!--<i class="nav_arrow"></i>
+								<i class="nav_line_bottom"></i>
+								<i class="nav_line_right"></i>-->
+								<div class="left-nav_more">
+									<dl class="nav_more_wrap">
+										<dt><a href="">当季热销</a></dt>
+										<dd>
+											<a href="">韩范美裙</a>
+											<a href="">裙子套装</a>
+											<a href="">T恤裙</a>
+											<a href="">百褶裙</a>
+											<a href="">衬衫裙</a>
+											<a href="">包臀裙</a>
+											<a href="">背带裙</a>
+											<a href="">长裙</a>
+											<a href="">牛仔裙</a>
+											<a href="">背心裙</a>
+											<a href="">牛仔半身裙</a>
+										</dd>	
+									</dl>	
+									<dl class="nav_more_wrap">
+										<dt><a href="">潮流新品</a></dt>
+										<dd>
+											<a href="">小黑裙</a>
+											<a href="">吊带裙</a>
+											<a href="">荷叶边美裙</a>
+											<a href="">小白裙</a>
+											<a href="">碎花裙</a>
+											<a href="">不规则美裙</a>
+											<a href="">一字领美裙</a>
+											<a href="">开叉裙</a>
+											<a href="">蕾丝裙</a>
+										</dd>
+									</dl>
+									<dl class="nav_more_wrap">
+										<dt><a href="">初秋上新</a></dt>
+										<dd>
+											<a href="">中袖连衣裙</a>
+											<a href="">针织裙</a>
+											<a href="">长袖连衣裙</a>
+											<a href="">复古连衣裙</a>
+											<a href="">卫衣裙</a>
+										</dd>
+									</dl>
+									<!--yizhangtu-->
+									<div class="nav_more_img">
+										<a href=""><img src="img/index/upload_ifrgimdcgaywcmzshazdambqmeyde_250x130.jpg"/></a>
+									</div>
+								</div>
+							</li>
+							<li class="fl primary_nav_li">
+								<dl class="nav_wrap clearfix">
+									<dt class="fl"><a href="">家居</a></dt>
+									<dd class="fr">
+										<span id="">
+											<a class="hot_words" href="">新品</a>
+											<a class="hot_words_mid" href="">四件套</a>
+											<a class="" href="">小家具</a>
+										</span>
+									</dd>
+								</dl>
+								<!-- 弹出框 -->
+								<!--<i class="nav_arrow"></i>
+								<i class="nav_line_bottom"></i>
+								<i class="nav_line_right"></i>-->
+								<div class="left-nav_more">
+									<dl class="nav_more_wrap">
+										<dt><a href="">当季热销</a></dt>
+										<dd>
+											<a href="">韩范美裙</a>
+											<a href="">裙子套装</a>
+											<a href="">T恤裙</a>
+											<a href="">百褶裙</a>
+											<a href="">衬衫裙</a>
+											<a href="">包臀裙</a>
+											<a href="">背带裙</a>
+											<a href="">长裙</a>
+											<a href="">牛仔裙</a>
+											<a href="">背心裙</a>
+											<a href="">牛仔半身裙</a>
+										</dd>	
+									</dl>	
+									<dl class="nav_more_wrap">
+										<dt><a href="">潮流新品</a></dt>
+										<dd>
+											<a href="">小黑裙</a>
+											<a href="">吊带裙</a>
+											<a href="">荷叶边美裙</a>
+											<a href="">小白裙</a>
+											<a href="">碎花裙</a>
+											<a href="">不规则美裙</a>
+											<a href="">一字领美裙</a>
+											<a href="">开叉裙</a>
+											<a href="">蕾丝裙</a>
+										</dd>
+									</dl>
+									<dl class="nav_more_wrap">
+										<dt><a href="">初秋上新</a></dt>
+										<dd>
+											<a href="">中袖连衣裙</a>
+											<a href="">针织裙</a>
+											<a href="">长袖连衣裙</a>
+											<a href="">复古连衣裙</a>
+											<a href="">卫衣裙</a>
+										</dd>
+									</dl>
+									<!--yizhangtu-->
+									<div class="nav_more_img">
+										<a href=""><img src="img/index/upload_ieztkobzmrswinlcgmzdambqgyyde_250x130.png"/></a>
+									</div>
+								</div>
+							</li>
+							<li class="fl primary_nav_li">
+								<dl class="nav_wrap clearfix">
+									<dt class="fl"><a href="">母婴</a></dt>
+									<dd class="fr">
+										<span id="">
+											<a class="hot_words" href="">初秋新品</a>
+											<a class="hot_words_mid" href="">童装</a>
+											<a class="" href="">孕妇装</a>
+										</span>
+									</dd>
+								</dl>
+								<!-- 弹出框 -->
+								<!--<i class="nav_arrow"></i>
+								<i class="nav_line_bottom"></i>
+								<i class="nav_line_right"></i>-->
+								<div class="left-nav_more">
+									<dl class="nav_more_wrap">
+										<dt><a href="">当季热销</a></dt>
+										<dd>
+											<a href="">韩范美裙</a>
+											<a href="">裙子套装</a>
+											<a href="">T恤裙</a>
+											<a href="">百褶裙</a>
+											<a href="">衬衫裙</a>
+											<a href="">包臀裙</a>
+											<a href="">背带裙</a>
+											<a href="">长裙</a>
+											<a href="">牛仔裙</a>
+											<a href="">背心裙</a>
+											<a href="">牛仔半身裙</a>
+										</dd>	
+									</dl>	
+									<dl class="nav_more_wrap">
+										<dt><a href="">潮流新品</a></dt>
+										<dd>
+											<a href="">小黑裙</a>
+											<a href="">吊带裙</a>
+											<a href="">荷叶边美裙</a>
+											<a href="">小白裙</a>
+											<a href="">碎花裙</a>
+											<a href="">不规则美裙</a>
+											<a href="">一字领美裙</a>
+											<a href="">开叉裙</a>
+											<a href="">蕾丝裙</a>
+										</dd>
+									</dl>
+									<dl class="nav_more_wrap">
+										<dt><a href="">初秋上新</a></dt>
+										<dd>
+											<a href="">中袖连衣裙</a>
+											<a href="">针织裙</a>
+											<a href="">长袖连衣裙</a>
+											<a href="">复古连衣裙</a>
+											<a href="">卫衣裙</a>
+										</dd>
+									</dl>
+									<!--yizhangtu-->
+									<div class="nav_more_img">
+										<a href=""><img src="img/index/upload_6a5j71jcih8bl4f4207b5ib14iih9_250x130.jpg"/></a>
+									</div>
+								</div>
+							</li>
+							<li class="fl primary_nav_li">
+								<dl class="nav_wrap clearfix">
+									<dt class="fl"><a href="">零食</a></dt>
+									<dd class="fr">
+										<span id="">
+											<a class="hot_words" href="">休闲食品</a>
+											<a class="" href="">进口美食</a>
+											<a class="" href="">肉食</a>
+										</span>
+									</dd>
+								</dl>
+								<!-- 弹出框 -->
+								<!--<i class="nav_arrow"></i>
+								<i class="nav_line_bottom"></i>
+								<i class="nav_line_right"></i>-->
+								<div class="left-nav_more">
+									<dl class="nav_more_wrap">
+										<dt><a href="">当季热销</a></dt>
+										<dd>
+											<a href="">韩范美裙</a>
+											<a href="">裙子套装</a>
+											<a href="">T恤裙</a>
+											<a href="">百褶裙</a>
+											<a href="">衬衫裙</a>
+											<a href="">包臀裙</a>
+											<a href="">背带裙</a>
+											<a href="">长裙</a>
+											<a href="">牛仔裙</a>
+											<a href="">背心裙</a>
+											<a href="">牛仔半身裙</a>
+										</dd>	
+									</dl>	
+									<dl class="nav_more_wrap">
+										<dt><a href="">潮流新品</a></dt>
+										<dd>
+											<a href="">小黑裙</a>
+											<a href="">吊带裙</a>
+											<a href="">荷叶边美裙</a>
+											<a href="">小白裙</a>
+											<a href="">碎花裙</a>
+											<a href="">不规则美裙</a>
+											<a href="">一字领美裙</a>
+											<a href="">开叉裙</a>
+											<a href="">蕾丝裙</a>
+										</dd>
+									</dl>
+									<dl class="nav_more_wrap">
+										<dt><a href="">初秋上新</a></dt>
+										<dd>
+											<a href="">中袖连衣裙</a>
+											<a href="">针织裙</a>
+											<a href="">长袖连衣裙</a>
+											<a href="">复古连衣裙</a>
+											<a href="">卫衣裙</a>
+										</dd>
+									</dl>
+									<!--yizhangtu-->
+									<div class="nav_more_img">
+										<a href=""><img src="img/index/upload_ifrdsytfmrtgiyjthezdambqmeyde_250x130.jpg"/></a>
+									</div>
+								</div>
+							</li>
+							<li class="fl primary_nav_li">
+								<dl class="nav_wrap clearfix">
+									<dt class="fl"><a href="">百货</a></dt>
+									<dd class="fr">
+										<span id="">
+											<a class="hot_words" href="">新品</a>
+											<a class=" hot_words_mid" href="">玻璃杯</a>
+											<a class="" href="">晴雨伞</a>
+										</span>
+									</dd>
+								</dl>
+								<!-- 弹出框 -->
+								<!--<i class="nav_arrow"></i>
+								<i class="nav_line_bottom"></i>
+								<i class="nav_line_right"></i>-->
+								<div class="left-nav_more">
+									<dl class="nav_more_wrap">
+										<dt><a href="">当季热销</a></dt>
+										<dd>
+											<a href="">韩范美裙</a>
+											<a href="">裙子套装</a>
+											<a href="">T恤裙</a>
+											<a href="">百褶裙</a>
+											<a href="">衬衫裙</a>
+											<a href="">包臀裙</a>
+											<a href="">背带裙</a>
+											<a href="">长裙</a>
+											<a href="">牛仔裙</a>
+											<a href="">背心裙</a>
+											<a href="">牛仔半身裙</a>
+										</dd>	
+									</dl>	
+									<dl class="nav_more_wrap">
+										<dt><a href="">潮流新品</a></dt>
+										<dd>
+											<a href="">小黑裙</a>
+											<a href="">吊带裙</a>
+											<a href="">荷叶边美裙</a>
+											<a href="">小白裙</a>
+											<a href="">碎花裙</a>
+											<a href="">不规则美裙</a>
+											<a href="">一字领美裙</a>
+											<a href="">开叉裙</a>
+											<a href="">蕾丝裙</a>
+										</dd>
+									</dl>
+									<dl class="nav_more_wrap">
+										<dt><a href="">初秋上新</a></dt>
+										<dd>
+											<a href="">中袖连衣裙</a>
+											<a href="">针织裙</a>
+											<a href="">长袖连衣裙</a>
+											<a href="">复古连衣裙</a>
+											<a href="">卫衣裙</a>
+										</dd>
+									</dl>
+									<!--yizhangtu-->
+									<div class="nav_more_img">
+										<a href=""><img src="img/index/upload_ie4deyrvguytkytchezdambqgiyde_250x130.jpg"/></a>
+									</div>
+								</div>
+							</li>						
+						</ul>	
+					</div>
+				</div>	
+				<!---banner------>
+				<div class="header-banner fl">
+					<div class="header-banner-wrap clearfix">
+						<!--banner-->
+						<div class="banner fl">
+							<div class="banner-show">
+								<ul class="banner-box">
+									<li class="banner-img fl"><a href=""><img src="img/index/banner1.jpg"/></a></li>
+									<li class="banner-img fl"><a href="Mogujie-3.html" target="_blank"><img src="img/index/banner2 (2).jpg"/></a></li>
+									<li class="banner-img fl"><a href=""><img src="img/index/banner2.jpg"/></a></li>
+									<li class="banner-img fl"><a href=""><img src="img/index/banner3.jpg"/></a></li>
+									<li class="banner-img fl"><a href=""><img src="img/index/banner4.jpg"/></a></li>
+									<li class="banner-img fl"><a href=""><img src="img/index/banner5.jpg"/></a></li>
+								</ul>
+								<div class="arrow-box btn-l">&lt;</div>
+							    <div class="arrow-box btn-r">&gt;</div>
+							    <ul class="bot-box" id="bot_box">
+							        <li class="active"></li>
+							        <li></li>
+							        <li></li>
+							        <li></li>
+							        <li></li>
+							        <li></li>
+							    </ul>
+							</div>
+						</div>
+						<!--ad-->
+						<div class="header-banner-ad fr">
+							<ul class="clearfix">
+								<li class="bottom_line"><a href=""><img src="img/index/upload_600da60feifedhk622a3c6clekb04_180x220.jpg"/></a></li>
+								<li><a href=""><img src="img/index/er_7c08gj839f672134i2k9e7c2lhcjc_180x220.jpg" /></a></li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	<!-----限时快抢------------->
+		<div class="img-nav">
+			<div class="img-nav_wrap">
+				<ul class="clearfix">
+					<li class="img-nav_left fl">
+						<a href="">
+							<span class="timer_txt">限时快抢</span>
+							<span class="timer_hour">01</span>
+							<span class="timer_icon1">:</span>
+							<span class="timer_minute">03</span>
+							<span class="timer_icon2">:</span>
+							<span class="timer_seconds">42</span>
+							<span class="timer_price">23元</span>
+							<span class="timer_price_name">惊喜价</span>
+							<img src="img/index/upload_69di58967a1i44ij2500h7c698ck3_640x640.jpg" alt="" style=""/>
+						</a>
+					</li>
+					<li class="img-nav_mid fl">
+						<a class="fl" href=""><img src="img/index/1.jpg" alt="" /></a>
+						<a class="fl" href=""><img  src="img/index/3.png" alt="" /></a>
+					</li>
+					<li class="img-nav_right fr">
+						<a href="Mogujie-2.html" target="_blank"><img src="img/index/4.jpg" alt="" /></a>
+						<a href=""><img src="img/index/4 (2).jpg"/></a>
+					</li>
+				</ul>
+			</div>
+		</div>			
+	<!--FLOORS-->
+		<div class="body-floors">
+			<div class="body-floors-wrap">
+		<!--FLOOR1-->
+				<div class="floor1 floor-t">
+					<div class="floor-wrap floor-t-wrap">
+						<div class="floor-title-wrap clearfix">
+							<img src="img/index/title-img.png" alt="" class="floor-title-L fl" />
+							<h3 class="floor-title fl">蘑菇良品</h3>
+							<img src="img/index/title-img.png" alt="" class="floor-title-L fr" />
+						</div>
+						<div class="floor-content">
+							<div class="floor-contentL fl">
+								<div class="floor-contentL-img">
+									<a class="fl" href=""><img src="img/index/iz_86hjbj9eddj18h29ga3633laei2ei_170x170.png"/></a>
+									<a class="fl"  href=""><img src="img/index/iz_5j31h8eh5j8gf259l6a695jgb1cih_170x170.png"/></a>
+								</div>
+								<table class="floor-contentL-txt fl" border="0" cellspacing="" cellpadding="">
+									<tr>
+										<td><a href="">初秋尝鲜</a></td><td><a href="">初秋尝鲜</a></td><td><a href="">初秋尝鲜</a></td>
+									</tr>
+									<tr>
+										<td><a href="">初秋尝鲜</a></td><td><a href="">初秋尝鲜</a></td><td><a href="">初秋尝鲜</a></td>
+									</tr>
+									<tr>
+										<td><a href="">初秋尝鲜</a></td><td><a href="">初秋尝鲜</a></td><td><a href="">初秋尝鲜</a></td>
+									</tr>
+								</table>
+							</div>
+							<ul class="floor-contentR fr">
+								<li class="fl">
+									<a class="fl" href=""><img class="top-img" src="img/index/iz_65aia771ddbadl0g557j7h307hljf_305x330.jpg" alt="" /></a>
+									<div class="floor-content-li_div fl">
+										<a class="clearfix" href="">
+											<img class="fl" src="img/index/iz_6f4hi6e42i3l11bbji501c16kg573_130x150.jpg"/>
+											<span class="floor-content-li_div-title fr">
+												<h4>低价连衣裙</h4>
+												<p>约会必备甜蜜单品</p>
+											</span>
+										</a>
+									</div>
+								</li>
+								<li class="fl">
+									<a class="fl" href=""><img class="top-img" src="img/index/iz_53lfj09b31k1fec1914e3hg06lfbc_305x330.jpg" alt="" /></a>
+									<div class="floor-content-li_div fl">
+										<a class="clearfix" href="">
+											<img class="fl" src="img/index/iz_7ifcai017338l8j40jk12e08h67fh_130x150.jpg"/>
+											<span class="floor-content-li_div-title fr">
+												<h4>必备T恤</h4>
+												<p>不撞衫每天不重样</p>
+											</span>
+										</a>
+									</div>
+								</li>
+								<li class="fl">
+									<a class="fl" href=""><img class="top-img" src="img/index/iz_4cc8eb08l879f5ij9g2j969id28jg_305x330.jpg" alt="" /></a>
+									<div class="floor-content-li_div fl">
+										<a class="clearfix" href="">
+											<img class="fl" src="img/index/iz_0jcdlcfhc62f7ch03730ead8ij3ca_130x150.jpg"/>
+											<span class="floor-content-li_div-title fr">
+												<h4>初秋好货</h4>
+												<p>提前买秋装</p>
+											</span>
+										</a>
+									</div>
+								</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			<!--FLOOR2-->
+				<div class="floor2 floor-lo">
+					<div class="floor-wrap floor-lo-wrap">
+						<div class="floor-title-wrap clearfix">
+							<img src="img/index/title-img.png" alt="" class="floor-title-L fl" />
+							<h3 class="floor-title fl">品牌站</h3>
+							<img src="img/index/title-img.png" alt="" class="floor-title-L fr" />
+						</div>
+						<div class="floor-content">
+							<div class="floor-contentL fl">
+								<div class="floor-contentL-img">
+									<a  href=""><img src="img/index/logo1-0.jpg"/></a>
+								</div>
+								<table class="floor-contentL-txt fl" border="" cellspacing="0" cellpadding="0">
+									<tr>
+										<td><a href=""><img src="img/index/logo1.jpg"/></a></td><td><a href=""><img src="img/index/logo1-1.jpg"/></a></td>
+									</tr>
+									<tr>
+										<td><a href=""><img src="img/index/logo1-2.jpg"/></a></td><td><a href=""><img src="img/index/logo1-3.jpg"/></a></td>
+									</tr>
+									<tr>
+										<td><a href=""><img src="img/index/logo1-4.jpg"/></a></td><td><a href=""><img src="img/index/logo1-5.jpg"/></a></td>
+									</tr>
+									<tr>
+										<td><a href=""><img src="img/index/logo1-6.jpg"/></a></td><td><a href=""><img src="img/index/logo1-7.jpg"/></a></td>
+									</tr>
+								</table>
+							</div>
+							<div class="fr floor-contentR">
+								<a class="floor-contentRBr fl"><img src="img/index/upload_86g9c3c72e0d0cd311he2ch8k1874_305x500.jpg"/></a>
+								<table class="floor-contentR-wrap fr" border="" cellspacing="0" cellpadding="0">
+									<tr>
+										<td><a href=""><img src="img/index/upload_44381lj046e56aj4154bgf175c2fe_175x170.jpg" alt="" /><span>大东</span></a></td>
+										<td><a href=""><img src="img/index/upload_5af40hi7l4djj6hh0df2fg5lk283l_175x170.jpg" alt="" /><span>蓓尔</span></a></td>
+										<td><a href=""><img src="img/index/upload_0l6377fb79eggh2b11lh7f3ddb28b_175x170.jpg" alt="" /><span>卓诗尼</span></a></td>
+									</tr>
+									<tr>
+										<td><a href=""><img src="img/index/upload_4k3b42316blce674l3012g3c9a2g8_175x170.jpg" alt="" /><span>达芙妮</span></a></td>
+										<td><a href=""><img src="img/index/upload_0fdjb3d4ag4l1ige46ikk6akdkk06_175x170.jpg" alt="" /><span>BANQU半曲</span></a></td>
+										<td><a href=""><img src="img/index/upload_1a1agbelec24d4jh9c0c44aj7k11j_175x170.jpg" alt="" /><span>环球</span></a></td>
+									</tr>
+								</table>
+							</div>
+						</div>
+					</div>
+				</div>
+			<!--FLOOR3,4-->
+				<div class="floor3 floor-lo">
+					<div class="floor-wrap floor-lo-wrap">
+						<div class="floor-title-wrap clearfix">
+							<img src="img/index/title-img.png" alt="" class="floor-title-L fl" />
+							<h3 class="floor-title fl">潮流女装</h3>
+							<img src="img/index/title-img.png" alt="" class="floor-title-L fr" />
+						</div>
+						<div class="floor-content">
+							<div class="floor-contentL fl">
+								<div class="floor-contentL-img">
+									<a  href=""><img src="img/index/logo2-0.jpg"/></a>
+								</div>
+								<table class="floor-contentL-txt fl" border="" cellspacing="0" cellpadding="0">
+									<tr>
+										<td><a href=""><img src="img/index/logo2.jpg"/></a></td><td><a href=""><img src="img/index/logo2-1.jpg"/></a></td>
+									</tr>
+									<tr>
+										<td><a href=""><img src="img/index/logo2-2.jpg"/></a></td><td><a href=""><img src="img/index/logo2-3.jpg"/></a></td>
+									</tr>
+									<tr>
+										<td><a href=""><img src="img/index/logo2-4.jpg"/></a></td><td><a href=""><img src="img/index/logo2-5.jpg"/></a></td>
+									</tr>
+									<tr>
+										<td><a href=""><img src="img/index/logo2-6.jpg"/></a></td><td><a href=""><img src="img/index/logo2-7.jpg"/></a></td>
+									</tr>
+								</table>
+							</div>
+							<div class="fr floor-contentR">
+								<a class="floor-contentRBr fl"><img src="img/index/1dq_714kd8ijjiig7ifck3l4dafg66907_305x500.jpg"/></a>
+								<table class="floor-contentR-wrap fr" border="" cellspacing="0" cellpadding="0">
+									<tr>
+										<td><a href=""><img src="img/index/1dq_6id1i601ggj2e2ijek5dlihhfgj57_175x170.png" alt="" /><span>连衣裙</span></a></td>
+										<td><a href=""><img src="img/index/1dq_08aik8fhh83dagi98b7139dlhi33g_175x170.png" alt="" /><span>牛仔裤</span></a></td>
+										<td><a href=""><img src="img/index/1dq_08d70abbjhia05f5e24k0kbe094g3_175x170.png" alt="" /><span>T恤</span></a></td>
+									</tr>
+									<tr>
+										<td><a href=""><img src="img/index/1dq_7710a87787a4b69ihfc8k75l710f0_175x170.png" alt="" /><span>省心套装</span></a></td>
+										<td><a href=""><img src="img/index/1dq_466d774gl4h7dd7b5jakl331fe8k2_175x170.png" alt="" /><span>卫衣</span></a></td>
+										<td><a href=""><img src="img/index/1dq_19i6i1e67656cki2390j73j6jd9h3_175x170.png" alt="" /><span>内衣</span></a></td>
+									</tr>
+								</table>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="floor4 floor-lo">
+					<div class="floor-wrap floor-lo-wrap">
+						<div class="floor-title-wrap clearfix">
+							<img src="img/index/title-img.png" alt="" class="floor-title-L fl" />
+							<h3 class="floor-title fl">人气女鞋</h3>
+							<img src="img/index/title-img.png" alt="" class="floor-title-L fr" />
+						</div>
+						<div class="floor-content">
+							<div class="floor-contentL fl">
+								<div class="floor-contentL-img">
+									<a  href=""><img src="img/index/logo3-0.jpg"/></a>
+								</div>
+								<table class="floor-contentL-txt fl" border="" cellspacing="0" cellpadding="0">
+									<tr>
+										<td><a href=""><img src="img/index/logo3.png"/></a></td><td><a href=""><img src="img/index/logo3-1.png"/></a></td>
+									</tr>
+									<tr>
+										<td><a href=""><img src="img/index/logo3-2.png"/></a></td><td><a href=""><img src="img/index/logo3-3.png"/></a></td>
+									</tr>
+									<tr>
+										<td><a href=""><img src="img/index/logo3-4.png"/></a></td><td><a href=""><img src="img/index/logo3-5.png"/></a></td>
+									</tr>
+									<tr>
+										<td><a href=""><img src="img/index/logo3-6.png"/></a></td><td><a href=""><img src="img/index/logo3-7.png"/></a></td>
+									</tr>
+								</table>
+							</div>
+							<div class="fr floor-contentR">
+								<a class="floor-contentRBr fl"><img src="img/index/in_55cgic9c4kjj4f5i1h70cigb0d33f_304x500.jpg"/></a>
+								<table class="floor-contentR-wrap fr" border="" cellspacing="0" cellpadding="0">
+									<tr>
+										<td><a href=""><img src="img/index/in_140jb72chb3hbf7l82kk26jcgiic1_175x170.jpg" alt="" /><span>超值运动鞋</span></a></td>
+										<td><a href=""><img src="img/index/in_7lb05bh6a20g7d02d85hajf630d0d_175x170.jpg" alt="" /><span>新品单鞋</span></a></td>
+										<td><a href=""><img src="img/index/in_0lac8be5l2kefakc1cca91j315gd4_175x170.png" alt="" /><span>新品小白鞋</span></a></td>
+									</tr>
+									<tr>
+										<td><a href=""><img src="img/index/in_7491hh4eacdh5979gfeb68c75g198_175x170.jpg" alt="" /><span>清仓凉鞋</span></a></td>
+										<td><a href=""><img src="img/index/in_7aedjj7358493090kae7di371l1e1_175x170.jpg" alt="" /><span>摩登高跟</span></a></td>
+										<td><a href=""><img src="img/index/in_075aj8g4jghfc8b400e2ffgbh5fhd_175x170.jpg" alt="" /><span>青春帆布</span></a></td>
+									</tr>
+								</table>
+							</div>
+						</div>
+					</div>
+				</div>
+			<!--FLOOR5,6-->	
+				<div class="floor5 floor-t">
+					<div class="floor-wrap floor-t-wrap">
+						<div class="floor-title-wrap clearfix">
+							<img src="img/index/title-img.png" alt="" class="floor-title-L fl" />
+							<h3 class="floor-title fl">男友潮搭</h3>
+							<img src="img/index/title-img.png" alt="" class="floor-title-L fr" />
+						</div>
+						<div class="floor-content">
+							<div class="floor-contentL fl">
+								<div class="floor-contentL-img">
+									<a class="fl" href=""><img src="img/index/7f_ifqwkzjtmrswmzrzhazdambqgyyde_170x170.png"/></a>
+									<a class="fl"  href=""><img src="img/index/7f_ifrgcnbtgbtgmzrzhazdambqmeyde_170x170.png"/></a>
+								</div>
+								<table class="floor-contentL-txt fl" border="0" cellspacing="" cellpadding="">
+									<tr>
+										<td><a href="">T恤</a></td><td><a href="">POLO衫</a></td><td><a href="">衬衫</a></td>
+									</tr>
+									<tr>
+										<td><a href="">休闲裤</a></td><td><a href="">牛仔裤</a></td><td><a href="">短裤</a></td>
+									</tr>
+									<tr>
+										<td><a href="">凉鞋</a></td><td><a href="">休闲鞋</a></td><td><a href="">套装</a></td>
+									</tr>
+								</table>
+							</div>
+							<ul class="floor-contentR fr">
+								<li class="fl">
+									<a class="fl" href=""><img class="top-img" src="img/index/iz_65aia771ddbadl0g557j7h307hljf_305x330.jpg" alt="" /></a>
+									<div class="floor-content-li_div fl">
+										<a class="clearfix" href="">
+											<img class="fl" src="img/index/oj_5jj54gg638l266dhfk56782cbdcdh_130x150.jpg"/>
+											<span class="floor-content-li_div-title fr">
+												<h4>潮流上衣</h4>
+												<p>秋款必备单品</p>
+											</span>
+										</a>
+									</div>
+								</li>
+								<li class="fl">
+									<a class="fl" href=""><img class="top-img" src="img/index/iz_53lfj09b31k1fec1914e3hg06lfbc_305x330.jpg" alt="" /></a>
+									<div class="floor-content-li_div fl">
+										<a class="clearfix" href="">
+											<img class="fl" src="img/index/oj_2h6c9if741kjh447la1102jhde832_130x150.jpg"/>
+											<span class="floor-content-li_div-title fr">
+												<h4>腿长1米8</h4>
+												<p>1折起疯狂购</p>
+											</span>
+										</a>
+									</div>
+								</li>
+								<li class="fl">
+									<a class="fl" href=""><img class="top-img" src="img/index/1j3_4ffhihc5dl1h36eikj3baii5b7c39_305x330.jpg" alt="" /></a>
+									<div class="floor-content-li_div fl">
+										<a class="clearfix" href="">
+											<img class="fl" src="img/index/oj_290140gbfi14k38bh6j84b3k0k6ih_130x150.jpg"/>
+											<span class="floor-content-li_div-title fr">
+												<h4>休闲鞋履</h4>
+												<p>直降100冰点价</p>
+											</span>
+										</a>
+									</div>
+								</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+				<div class="floor6 floor-t">
+					<div class="floor-wrap floor-t-wrap">
+						<div class="floor-title-wrap clearfix">
+							<img src="img/index/title-img.png" alt="" class="floor-title-L fl" />
+							<h3 class="floor-title fl">箱包配饰</h3>
+							<img src="img/index/title-img.png" alt="" class="floor-title-L fr" />
+						</div>
+						<div class="floor-content">
+							<div class="floor-contentL fl">
+								<div class="floor-contentL-img">
+									<a class="fl" href=""><img src="img/index/upload_ie4dozbvmm3tcmzxhezdambqgiyde_170x170.png"/></a>
+									<a class="fl"  href=""><img src="img/index/8j_ifqwgmbvga3tgmzuhezdambqgyyde_170x170.png"/></a>
+								</div>
+								<table class="floor-contentL-txt fl" border="0" cellspacing="" cellpadding="">
+									<tr>
+										<td><a href="">新品包包</a></td><td><a href="">双肩包</a></td><td><a href="">斜挎包</a></td>
+									</tr>
+									<tr>
+										<td><a href="">锁骨链</a></td><td><a href="">耳饰</a></td><td><a href="">渔夫帽</a></td>
+									</tr>
+									<tr>
+										<td><a href="">手提包</a></td><td><a href="">发饰</a></td><td><a href="">单肩包</a></td>
+									</tr>
+								</table>
+							</div>
+							<ul class="floor-contentR fr">
+								<li class="fl">
+									<a class="fl" href=""><img class="top-img" src="img/index/upload_ifrtenjxgjsgmmrxhezdambqhayde_305x330.jpg" alt="" /></a>
+									<div class="floor-content-li_div fl">
+										<a class="clearfix" href="">
+											<img class="fl" src="img/index/upload_ifqtoy3emy2temzxhezdambqgyyde_130x150.jpg"/>
+											<span class="floor-content-li_div-title fr">
+												<h4>小方包</h4>
+												<p>高人气白菜价</p>
+											</span>
+										</a>
+									</div>
+								</li>
+								<li class="fl">
+									<a class="fl" href=""><img class="top-img" src="img/index/upload_ifrdsy3fgfsgmmrxhezdambqmeyde_305x330.jpg" alt="" /></a>
+									<div class="floor-content-li_div fl">
+										<a class="clearfix" href="">
+											<img class="fl" src="img/index/upload_ie4wcn3gmnqtemzxhezdambqgqyde_130x150.jpg"/>
+											<span class="floor-content-li_div-title fr">
+												<h4>猫眼太阳镜</h4>
+												<p>夏季遮阳圣器</p>
+											</span>
+										</a>
+									</div>
+								</li>
+								<li class="fl">
+									<a class="fl" href=""><img class="top-img" src="img/index/upload_ie4gezbvgfsgmmrxhezdambqgiyde_301x330.jpg" alt="" /></a>
+									<div class="floor-content-li_div fl">
+										<a class="clearfix" href="">
+											<img class="fl" src="img/index/upload_ifqwezlegjsdcmzxhezdambqgyyde_130x150.jpg"/>
+											<span class="floor-content-li_div-title fr">
+												<h4>抽绳包袋</h4>
+												<p>随性气质风</p>
+											</span>
+										</a>
+									</div>
+								</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			<!--Floor,7,8,9,10,11-->
+				<div class="floor7 floor-lo">
+					<div class="floor-wrap floor-lo-wrap">
+						<div class="floor-title-wrap clearfix">
+							<img src="img/index/title-img.png" alt="" class="floor-title-L fl" />
+							<h3 class="floor-title fl">运动瘦身</h3>
+							<img src="img/index/title-img.png" alt="" class="floor-title-L fr" />
+						</div>
+						<div class="floor-content">
+							<div class="floor-contentL fl">
+								<div class="floor-contentL-img">
+									<a  href=""><img src="img/index/logo4-0.jpg"/></a>
+								</div>
+								<table class="floor-contentL-txt fl" border="" cellspacing="0" cellpadding="0">
+									<tr>
+										<td><a href=""><img src="img/index/logo4.jpg"/></a></td><td><a href=""><img src="img/index/logo4-1.jpg"/></a></td>
+									</tr>
+									<tr>
+										<td><a href=""><img src="img/index/logo4-2.jpg"/></a></td><td><a href=""><img src="img/index/logo4-3.jpg"/></a></td>
+									</tr>
+									<tr>
+										<td><a href=""><img src="img/index/logo4-4.jpg"/></a></td><td><a href=""><img src="img/index/logo4-5.jpg"/></a></td>
+									</tr>
+									<tr>
+										<td><a href=""><img src="img/index/logo4-6.jpg"/></a></td><td><a href=""><img src="img/index/logo4-7.jpg"/></a></td>
+									</tr>
+								</table>
+							</div>
+							<div class="fr floor-contentR">
+								<a class="floor-contentRBr fl"><img src="img/index/6a_2iibl7h01bj4f1lgfb27k60fbkke8_305x500.jpg"/></a>
+								<table class="floor-contentR-wrap fr" border="" cellspacing="0" cellpadding="0">
+									<tr>
+										<td><a href=""><img src="img/index/6a_43kgg78hdih3adci1cia9ldk1577l_175x170.jpg" alt="" /><span>撩"汉"内衣</span></a></td>
+										<td><a href=""><img src="img/index/6a_8cga49a10b60905ff9b7743e1j0e1_175x170.jpg" alt="" /><span>元气套装</span></a></td>
+										<td><a href=""><img src="img/index/6a_1aecf5a2k9a0264i97ighg1a1h8gj_175x170.jpg" alt="" /><span>心机小武器</span></a></td>
+									</tr>
+									<tr>
+										<td><a href=""><img src="img/index/6a_1733ifelg6i6g17gf9b23784ce348_175x170.jpg" alt="" /><span>棒球服</span></a></td>
+										<td><a href=""><img src="img/index/6a_6c577gab5lf49h4ia98070060ce6g_175x170.jpg" alt="" /><span>潮流休闲鞋</span></a></td>
+										<td><a href=""><img src="img/index/6a_4d3jlj9jfi389g3ej3b6iag7ahh1i_175x170.png" alt="" /><span>必瘦跑鞋</span></a></td>
+									</tr>
+								</table>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="floor8 floor-lo">
+					<div class="floor-wrap floor-lo-wrap">
+						<div class="floor-title-wrap clearfix">
+							<img src="img/index/title-img.png" alt="" class="floor-title-L fl" />
+							<h3 class="floor-title fl">时尚美妆</h3>
+							<img src="img/index/title-img.png" alt="" class="floor-title-L fr" />
+						</div>
+						<div class="floor-content">
+							<div class="floor-contentL fl">
+								<div class="floor-contentL-img">
+									<a  href=""><img src="img/index/logo5-0.jpg"/></a>
+								</div>
+								<table class="floor-contentL-txt fl" border="" cellspacing="0" cellpadding="0">
+									<tr>
+										<td><a href=""><img src="img/index/logo5.jpg"/></a></td><td><a href=""><img src="img/index/logo5-1.jpg"/></a></td>
+									</tr>
+									<tr>
+										<td><a href=""><img src="img/index/logo5-2.jpg"/></a></td><td><a href=""><img src="img/index/logo5-3.jpg"/></a></td>
+									</tr>
+									<tr>
+										<td><a href=""><img src="img/index/logo5-4.jpg"/></a></td><td><a href=""><img src="img/index/logo5-5.jpg"/></a></td>
+									</tr>
+									<tr>
+										<td><a href=""><img src="img/index/logo5-6.jpg"/></a></td><td><a href=""><img src="img/index/logo5-7.jpg"/></a></td>
+									</tr>
+								</table>
+							</div>
+							<div class="fr floor-contentR">
+								<a class="floor-contentRBr fl"><img src="img/index/1ei_373i446dl2g1b040gg91i79fc80gl_305x500.jpg"/></a>
+								<table class="floor-contentR-wrap fr" border="" cellspacing="0" cellpadding="0">
+									<tr>
+										<td><a href=""><img src="img/index/1ei_ie4gcojthbrgkyrshezdambqgiyde_175x170.jpg" alt="" /><span>热销面膜</span></a></td>
+										<td><a href=""><img src="img/index/1ei_ie4tkzbtmztgkyrshezdambqgqyde_175x170.jpg" alt="" /><span>省心套装</span></a></td>
+										<td><a href=""><img src="img/index/1ei_0be4j85a56470jij1hb3ki0770bb2_175x170.jpg" alt="" /><span>个护</span></a></td>
+									</tr>
+									<tr>
+										<td><a href=""><img src="img/index/1ei_ifrtcm3dgjrwkyrshezdambqhayde_175x170.jpg" alt="" /><span>口红</span></a></td>
+										<td><a href=""><img src="img/index/1ei_ifrdsmjvmfrwkyrshezdambqmeyde_175x170.jpg" alt="" /><span>裸妆bb</span></a></td>
+										<td><a href=""><img src="img/index/1ei_ie4wkzlghfqwmyrshezdambqgqyde_175x170.jpg" alt="" /><span>香水</span></a></td>
+									</tr>
+								</table>
+							</div>
+						</div>
+					</div>
+				</div>
+			
+				<div class="floor9 floor-lo">
+					<div class="floor-wrap floor-lo-wrap">
+						<div class="floor-title-wrap clearfix">
+							<img src="img/index/title-img.png" alt="" class="floor-title-L fl" />
+							<h3 class="floor-title fl">家居生活</h3>
+							<img src="img/index/title-img.png" alt="" class="floor-title-L fr" />
+						</div>
+						<div class="floor-content">
+							<div class="floor-contentL fl">
+								<div class="floor-contentL-img">
+									<a  href=""><img src="img/index/logo6-0.jpg"/></a>
+								</div>
+								<table class="floor-contentL-txt fl" border="" cellspacing="0" cellpadding="0">
+									<tr>
+										<td><a href=""><img src="img/index/logo6.png"/></a></td><td><a href=""><img src="img/index/logo6-1.png"/></a></td>
+									</tr>
+									<tr>
+										<td><a href=""><img src="img/index/logo6-2.jpg"/></a></td><td><a href=""><img src="img/index/logo6-3.png"/></a></td>
+									</tr>
+									<tr>
+										<td><a href=""><img src="img/index/logo6-4.jpg"/></a></td><td><a href=""><img src="img/index/logo6-5.png"/></a></td>
+									</tr>
+									<tr>
+										<td><a href=""><img src="img/index/logo6-6.png"/></a></td><td><a href=""><img src="img/index/logo6-7.png"/></a></td>
+									</tr>
+								</table>
+							</div>
+							<div class="fr floor-contentR">
+								<a class="floor-contentRBr fl"><img src="img/index/1dq_714kd8ijjiig7ifck3l4dafg66907_305x500.jpg"/></a>
+								<table class="floor-contentR-wrap fr" border="" cellspacing="0" cellpadding="0">
+									<tr>
+										<td><a href=""><img src="img/index/logo6-0.png" alt="" /><span>租房小家具</span></a></td>
+										<td><a href=""><img src="img/index/upload_ie4ggolcha2wmyrxhazdambqgiyde_300x300.png" alt="" /><span>晴雨伞</span></a></td>
+										<td><a href=""><img src="img/index/upload_ie4dsnzwhe2wmyrxhazdambqgiyde_300x300.png" alt="" /><span>玻璃杯</span></a></td>
+									</tr>
+									<tr>
+										<td><a href=""><img src="img/index/upload_ie4geojume2wmyrxhazdambqgiyde_300x300.png" alt="" /><span>美发神器</span></a></td>
+										<td><a href=""><img src="img/index/upload_ifrteyjrmi2wmyrxhazdambqhayde_300x300.png" alt="" /><span>精致手机壳</span></a></td>
+										<td><a href=""><img src="img/index/upload_ifqtim3dgvqwmyrxhazdambqgyyde_300x300.png" alt="" /><span>收纳控</span></a></td>
+									</tr>
+								</table>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="floor10 floor-lo">
+					<div class="floor-wrap floor-lo-wrap">
+						<div class="floor-title-wrap clearfix">
+							<img src="img/index/title-img.png" alt="" class="floor-title-L fl" />
+							<h3 class="floor-title fl">辣妈潮宝</h3>
+							<img src="img/index/title-img.png" alt="" class="floor-title-L fr" />
+						</div>
+						<div class="floor-content">
+							<div class="floor-contentL fl">
+								<div class="floor-contentL-img">
+									<a  href=""><img src="img/index/logo8-0 .jpg"/></a>
+								</div>
+								<table class="floor-contentL-txt fl" border="" cellspacing="0" cellpadding="0">
+									<tr>
+										<td><a href=""><img src="img/index/logo7.jpg"/></a></td><td><a href=""><img src="img/index/logo7-1.jpg"/></a></td>
+									</tr>
+									<tr>
+										<td><a href=""><img src="img/index/logo7-2.jpg"/></a></td><td><a href=""><img src="img/index/logo7-3.jpg"/></a></td>
+									</tr>
+									<tr>
+										<td><a href=""><img src="img/index/logo7-4.jpg"/></a></td><td><a href=""><img src="img/index/logo7-5.jpg"/></a></td>
+									</tr>
+									<tr>
+										<td><a href=""><img src="img/index/logo7-6.jpg"/></a></td><td><a href=""><img src="img/index/logo7-7.jpg"/></a></td>
+									</tr>
+								</table>
+							</div>
+							<div class="fr floor-contentR">
+								<a class="floor-contentRBr fl"><img src="img/index/logo7-0.jpg"/></a>
+								<table class="floor-contentR-wrap fr" border="" cellspacing="0" cellpadding="0">
+									<tr>
+										<td><a href=""><img src="img/index/p6_0efc67k802eh61jjeb06fkaihg4h7_300x300.jpg" alt="" /><span>小公主</span></a></td>
+										<td><a href=""><img src="img/index/p6_77fk9b8d70i79lkle7616e1gl5f4c_300x300.jpg" alt="" /><span>小王子</span></a></td>
+										<td><a href=""><img src="img/index/p6_2ciaek6980911429ek85la09dee45_300x300.jpg" alt="" /><span>时髦孕妈</span></a></td>
+									</tr>
+									<tr>
+										<td><a href=""><img src="img/index/p6_3cg7g8d7476f11l4chf0fc52l5a3c_300x300.jpg" alt="" /><span>舒适童鞋</span></a></td>
+										<td><a href=""><img src="img/index/p6_ie4tiobvmm3teyrxhazdambqgqyde_300x300.jpg" alt="" /><span>益智玩具</span></a></td>
+										<td><a href=""><img src="img/index/p6_ifrgcmjymzqteyrxhazdambqmeyde_300x300.jpg" alt="" /><span>必备用品</span></a></td>
+									</tr>
+								</table>
+							</div>
+						</div>
+					</div>
+				</div>
+			
+				<div class="floor11 floor-lo">
+					<div class="floor-wrap floor-lo-wrap">
+						<div class="floor-title-wrap clearfix">
+							<img src="img/index/title-img.png" alt="" class="floor-title-L fl" />
+							<h3 class="floor-title fl">吃心绝对</h3>
+							<img src="img/index/title-img.png" alt="" class="floor-title-L fr" />
+						</div>
+						<div class="floor-content">
+							<div class="floor-contentL fl">
+								<div class="floor-contentL-img">
+									<a  href=""><img src="img/index/logo8-10.jpg"/></a>
+								</div>
+								<table class="floor-contentL-txt fl" border="" cellspacing="0" cellpadding="0">
+									<tr>
+										<td><a href=""><img src="img/index/logo8.jpg"/></a></td><td><a href=""><img src="img/index/logo8-11.jpg"/></a></td>
+									</tr>
+									<tr>
+										<td><a href=""><img src="img/index/logo8-2.jpg"/></a></td><td><a href=""><img src="img/index/logo8-3.jpg"/></a></td>
+									</tr>
+									<tr>
+										<td><a href=""><img src="img/index/logo8-4.jpg"/></a></td><td><a href=""><img src="img/index/logo8-5.jpg"/></a></td>
+									</tr>
+									<tr>
+										<td><a href=""><img src="img/index/logo8-6.jpg"/></a></td><td><a href=""><img src="img/index/logo8-7.jpg"/></a></td>
+									</tr>
+								</table>
+							</div>
+							<div class="fr floor-contentR">
+								<a class="floor-contentRBr fl"><img src="img/index/10i_749lka1ilh7h1i2g7k56ec0hcek04_307x500.jpg"/></a>
+								<table class="floor-contentR-wrap fr" border="" cellspacing="0" cellpadding="0">
+									<tr>
+										<td><a href=""><img src="img/index/10i_27ac245f4bcg9l0g512hg8cih8331_175x170.jpg" alt="" /><span>点心</span></a></td>
+										<td><a href=""><img src="img/index/sy_ifrggn3fmftdom3chazdambqmeyde_175x170.jpg" alt="" /><span>熟食/辣条</span></a></td>
+										<td><a href=""><img src="img/index/sy_ie4wiyjwgnrtgyrxhazdambqgqyde_175x170.jpg" alt="" /><span>方便速食</span></a></td>
+									</tr>
+									<tr>
+										<td><a href=""><img src="img/index/sy_ifqwembqmi4dgyrxhazdambqgyyde_175x170.jpg" alt="" /><span>花草茶</span></a></td>
+										<td><a href=""><img src="img/index/sy_ie4tgyjwmfstgyrxhazdambqgqyde_175x170.jpg" alt="" /><span>坚果</span></a></td>
+										<td><a href=""><img src="img/index/sy_ifrtszjsgu3diyrxhazdambqhayde_175x170.jpg" alt="" /><span>饼干/膨化</span></a></td>
+									</tr>
+								</table>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+<!--footer-->
+	<div class="body-bottom">
+		<div class="body-bottom_wrap">
+			<div class="bottom-content clearfix">
+				<div class="bottom-contentL fl">
+					<img src="img/index/logo-mgj.png"/>
+					<p>营业执照注册号：
+						<a href="">330106000129004</a>
+					</p>
+					<p>增值电信业务经营许可证:
+						<a href="">浙B2-2110349</a>
+					</p>
+					<p>网络文化经营许可证:
+						<a href="">浙网文(2016)0349-219号</a>
+					</p>
+					<a href="">安全责任书</a><br />
+					<a href=""><img src="img/index/upload_ifrgemjwgq3gemzthazdambqmeyde_20x20.png" alt="" />浙公网安备 33010602002329号</a>
+					<p>©2016 Mogujie.com 杭州卷瓜网络有限公司</p>
+				</div>
+				<div class="bottom-contentR fr">
+					<dl class="fl">
+						<dt>公司</dt>
+						<dd><a href="">关于我们</a></dd>
+						<dd><a href="">招聘信息</a></dd>
+						<dd><a href="">联系我们</a></dd>
+					</dl>
+					<dl class="fl">
+						<dt>消费者</dt>
+						<dd><a href="">消费者服务</a></dd>
+						<dd><a href="">意见反馈</a></dd>
+						<dd><a href="">手机版下载</a></dd>
+					</dl>
+					<dl class="fl">
+						<dt>商家</dt>
+						<dd><a href="">商家入驻</a></dd>
+						<dd><a href="">商家后台</a></dd>
+						<dd><a href="">蘑菇商学院</a></dd>
+						<dd><a href="">商家社区</a></dd>
+					</dl>
+					<dl class="fl">
+						<dt>权威认证</dt>
+						<dd><img src="img/index/认证.png"/></dd>
+					</dl>
+				</div>
+			</div>
+			
+			<div class="bottom-friends">
+				<ul>
+					<li>友情链接:</li><li><a href="">蘑菇街游戏</a></li><li><a href="">淘粉吧</a></li><li><a href="">穿衣搭配</a></li><li><a href="">蘑菇街男装</a></li>
+					<li><a href="">蘑菇街鞋子</a></li><li><a href="">蘑菇街包包</a></li><li><a href="">QQ钱包</a></li><li><a href="">家具网</a></li><li><a href="">时尚品牌网</a></li>
+					<li><a href="">装修</a></li><li><a href="">蘑菇街母婴</a></li><li><a href="">衣联网</a></li><li><a href="">播视网视频</a></li><li><a href="">慧聪网</a></li>
+				</ul>
+			</div>
+		</div>
+	</div>
+
+	<script type="text/javascript" src="js/Mogujie.js" ></script>
+	</body>
+</html>
+

@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>404</title>
+		<style type="text/css">
+			.fl{float:left;}
+			.fr{float:right;}
+			.clearfix:after{										
+				content:'';display:block;
+				visibility:hidden;
+				height:0;
+				clear:both;}
+			.clearfix{														  
+				zoom:1;}
+			body{
+					background: url(img/NOT-found/53586d614298d9fd1ee76f603a112580.jpg) no-repeat ;
+					background-size: 100%;
+					
+				}
+			.body1{
+				width: 1148px;margin:60px 100px;
+				/*background: rgba(255,255,255,.8);
+				border-radius: 50%;*/
+			}
+			.body-wrap{
+				box-sizing: border-box;
+				padding: 100px 0 0;
+				height: 500px;
+				/*border: 1px double #069CF3;*/
+			}
+			.body-wrap .img1{
+				width: 450px;
+				height: 70%;
+				/*border: 1px double #069CF3;*/
+			}
+			.body-wrap img{
+				height:100%;
+			}
+			.body-wrap .instro{
+				margin-right: 130px;
+				text-align: center;
+				/*border: 1px double #069CF3;*/
+			}
+			.instro h1{
+				font-family: "arial narrow";
+				font-size: 36px;
+				color: rgba(250,50,50,1);
+				margin-bottom: 60px;
+				
+			}
+			.instro h3{
+				font-family: "楷体";
+				font-size: 30px;
+				color: rgba(250,50,150,1);
+				margin-bottom: 100px;
+			}
+			.instro a{
+				
+				padding: 20px 50px;
+				width: 200px;height: 160px;
+				border-radius: 20px;
+				background: rgba(30,41,255,.5);
+				font-size: 24px;
+				font-weight: 600;
+				color: #FFf;
+			}
+		</style>
+	</head>
+	<body>
+		<div class="body1">
+			<div class="body-wrap">
+				<div class="img1 fl">
+					<img id="imgShow" src="img/NOT-found/background.png" style="display: block;"/>
+				</div>
+				<div class="instro fr">
+					<h1>Sorry!服务器生气离家出走了(#~#)</h1>
+					<h3>点击<span class="txt1">下面</span>试试,会有<span class="txt2">惊喜</span>呦(^~^)</h3>
+					<a href="http://rj.baidu.com/soft/detail/14744.html?ald">(^~^)点点点</a>
+				</div>
+			</div>
+		</div>
+		<script type="text/javascript">
+			var imgShow=document.getElementById("imgShow"); 
+			var timer=null; 
+			window.onload=function(){ 
+				clearInterval(timer); 
+				timer=setInterval(function(){
+					imgShow.style.display="none";
+						timer=setTimeout(function(){
+							imgShow.style.display="block";
+						},600);
+					},1200);
+			}
+		</script>
+	</body>
+</html>
